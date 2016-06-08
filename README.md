@@ -1,28 +1,28 @@
 # Guía de Estilo CSS / Sass de Airbnb
 
-*A mostly reasonable approach to CSS and Sass*
+*Un enfoque más razonable para CSS y Sass*
 
 ## Tabla de contenidos
 
-  1. [Terminología](#terminolog%C3%ADa)
+  1. [Terminología](#terminología)
     - [Reglas](#reglas)
     - [Selectores](#selectores)
     - [Propiedades](#propiedades)
   1. [CSS](#css)
-    - [Formato](#formatting)
+    - [Formato](#formato)
     - [Comentarios](#comentarios)
     - [OOCSS y BEM](#oocss-y-bem)
-    - [Selectores ID](#id-selectors)
+    - [Selectores ID](#selectors-id)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
   1. [Sass](#sass)
-    - [Sintaxis](#syntax)
+    - [Sintaxis](#sintaxis)
     - [Orden](#orden-de-las-declaraciones-de-propiedades)
     - [Variables](#variables)
     - [Mixins](#mixins)
-    - [Extends](#directiva-extend)
-    - [Anidación](#nested-selectors)
-  1. [Traducción](#traduccion)
+    - [Extends](#extends)
+    - [Anidación](#anidacion)
+  1. [Traducción](#traducción)
 
 ## Terminología
 
