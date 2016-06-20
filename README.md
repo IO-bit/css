@@ -257,11 +257,13 @@ Preferentemente utilizar nombres de variable con guiones medios (ej. `$mi-variab
 
 ### Mixins
 
-Se deben utilizar Mixins para _secar_ el código, agregar claridad o abstraer de complejidad de la misma manera que las funciones. Los Mixins que no aceptan argumentos pueden ser útiles para ello, pero notar que si no está comprimiendo su carga (ej. gzip), esto puede contribuir a la duplicación innecesaria de código en los estilos resultantes.
+Se deben utilizar Mixins para no repetir código ([principio DRY](https://es.wikipedia.org/wiki/No_te_repitas)), agregar claridad o abstraer de complejidad de la misma manera que las funciones. Los Mixins que no aceptan argumentos pueden ser útiles para ello, pero notar que si no está comprimiendo su carga (ej. gzip), esto puede contribuir a la duplicación innecesaria de código en los estilos resultantes.
 
 ### Extend
 
-`@extend` debe evitarse ya que tiene un comportamiento poco intuitivo y potencialmente peligroso, específicamente cuando se utiliza con selectores anidados. Incluso extender los selectores placeholder de nivel superior puede causar problemas si el orden de los selectores termina cambiando más tarde (ej. si se encuentran en otros archivos y el orden de los archivos cambia). Gzipping debe manejar la mayor parte de los ahorros que se habría obtenido mediante el uso de `@extend`, y se pueden _secar_ las hojas de estilos muy bien con mixins.
+`@extend` debe evitarse ya que tiene un comportamiento poco intuitivo y potencialmente peligroso, específicamente cuando se utiliza con selectores anidados. Incluso extender los selectores placeholder de nivel superior puede causar problemas si el orden de los selectores termina cambiando más tarde (ej. si se encuentran en otros archivos y el orden de los archivos cambia). Gzipping debe manejar la mayor parte de los ahorros que se habría obtenido mediante el uso de `@extend`, y se puede evitar la repetición de código <sup>1</sup> en las hojas de estilos muy bien con mixins.
+
+_<sup>1</sup> Se utiliza el verbo "DRY up" haciendo referencia al principio [DRY (Don't Repeat Yourself)](https://es.wikipedia.org/wiki/No_te_repitas)._
 
 ### Anidación
 
