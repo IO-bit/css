@@ -173,7 +173,7 @@ Por más información sobre este tema, lea el siguiente [artículo de CSS Wizard
 
 ### JavaScript hooks
 
-Evitar la vinculación de la misma clase en tu CSS y JavaScript. Combinar los dos a menudo tiene consecuencias negativas, como mínimo, tiempo perdido durante la refactorización cuando un desarrollador debe hacer una referencia cruzada de cada clase que está cambiando, y peor aún, los dessarrolladores temen hacer cambios por miedo a romper la funcionalidad.
+Evitar la vinculación de la misma clase en tu CSS y JavaScript. Combinar los dos a menudo tiene consecuencias negativas, como mínimo, tiempo perdido durante la refactorización cuando un desarrollador debe hacer una referencia cruzada de cada clase que está cambiando, y peor aún, los desarrolladores temen hacer cambios por miedo a romper la funcionalidad.
 
 Recomendamos crear clases específicas para JavaScript para vincular con CSS, con el prefijo `.js-`:
 
