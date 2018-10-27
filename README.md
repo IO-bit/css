@@ -4,25 +4,25 @@
 
 ## Tabla de contenidos
 
-  1. [Terminología](#terminología)
+1. [Terminología](#terminología)
     - [Reglas](#reglas)
     - [Selectores](#selectores)
     - [Propiedades](#propiedades)
-  1. [CSS](#css)
+2. [CSS](#css)
     - [Formato](#formato)
     - [Comentarios](#comentarios)
     - [OOCSS y BEM](#oocss-y-bem)
     - [Selectores ID](#selectors-id)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
-  1. [Sass](#sass)
+1. [Sass](#sass)
     - [Sintaxis](#sintaxis)
     - [Orden](#orden-de-las-declaraciones-de-propiedades)
     - [Variables](#variables)
     - [Mixins](#mixins)
     - [Extends](#extends)
     - [Anidación](#anidacion)
-  1. [Traducción](#traducción)
+1. [Traducción](#traducción)
 
 ## Terminología
 
