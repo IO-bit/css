@@ -62,19 +62,21 @@ Finalmente, las propiedades son las que dan el estilo a los elementos selecciona
 }
 ```
 
+**[⬆ volver arriba](#Tabla-de-contenidos)**
+
 ## CSS
 
 ### Formato
 
-* Usar “soft tabs” (2 espacios) de indentación
+* Usar “soft tabs” (2 espacios) de indentación.
 * Preferentemente usar guiones medios (`-`) en lugar de [camelCase](https://es.wikipedia.org/wiki/CamelCase) en nombres de clases.
-  - Guiones bajos (`_`) y [PascalCasing](https://es.wikipedia.org/wiki/Pascal_Casing) son válidos si está utilizando BEM (ver [OOCSS y BEM](#oocss-y-bem) abajo)
-* No utilizar selectores ID
-* Cuando se utilizan varios selectores en una declaración de regla, poner cada selector en una línea
-* Poner un espacio antes de la llave de apertura `{` en declaraciones de regla
-* En las propiedades, poner un espacio después, y no antes, del caracter `:` (dos puntos)
-* Poner las llaves de cierre `}` de las declaraciones de regla en una nueva línea
-* Poner líneas en blanco entre las declaraciones de reglas
+  - Guiones bajos (`_`) y [PascalCasing](https://es.wikipedia.org/wiki/Pascal_Casing) son válidos si está utilizando BEM (ver [OOCSS y BEM](#oocss-y-bem) abajo).
+* No utilizar selectores ID.
+* Cuando se utilizan varios selectores en una declaración de regla, poner cada selector en una línea.
+* Poner un espacio antes de la llave de apertura `{` en declaraciones de regla.
+* En las propiedades, poner un espacio después, y no antes, del caracter `:` (dos puntos).
+* Poner las llaves de cierre `}` de las declaraciones de regla en una nueva línea.
+* Poner líneas en blanco entre las declaraciones de reglas.
 
 **Mal**
 
@@ -110,27 +112,27 @@ Finalmente, las propiedades son las que dan el estilo a los elementos selecciona
 * Preferentemente usar `//` (en Sass) para bloques de comentarios.
 * Preferentemente escribir comentarios en una única línea para ello. Evitar los comentarios al final de una línea.
 * Escribir comentarios detallados de código que no es auto-documentado:
-  - Usos de z-index
-  - Compatibilidad o hacks para navegadores específicos
+  - Usos de z-index.
+  - Compatibilidad o hacks para navegadores específicos.
 
 ### OOCSS y BEM
 
 Incentivamos el uso de una combinación de OOCSS y BEM por las siguientes razones:
 
-  * Ayuda a crear relaciones claras y estrictas entre CSS y HTML
+  * Ayuda a crear relaciones claras y estrictas entre CSS y HTML.
   * Ayuda a crear componentes reutilizables y que se pueden recomponer.
-  * Permite menos anidación y menor especificidad
-  * Ayuda a construir hojas de estilos escalables
+  * Permite menos anidación y menor especificidad.
+  * Ayuda a construir hojas de estilos escalables.
 
 **OOCSS**, o “CSS Orientado a Objetos” por sus siglas en Inglés, es un enfoque para escribir CSS que le permite pensar en sus hojas de estilo como una colección de “objetos”: reutilizables, con snippets que pueden repetirse fácilmente y se pueden utilizar independientemente a través de un sitio web.
 
-  * [OOCSS wiki](https://github.com/stubbornella/oocss/wiki) de Nicole Sullivan
-  * [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) de Smashing Magazine
+  * [OOCSS wiki](https://github.com/stubbornella/oocss/wiki) de Nicole Sullivan.
+  * [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) de Smashing Magazine.
 
 **BEM**, o “Bloque-Elemento-Modificador”, es una _convención de nomenclatura_ para clases en HTML y CSS. Fue originalmente desarrollado por Yandex con grandes bases de código y escalabilidad en mente, y puede servir como un conjunto sólido de directrices para la aplicación de OOCSS.
 
-  * [BEM 101](https://css-tricks.com/bem-101/) de CSS Trick
-  * [Introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) de Harry Roberts
+  * [BEM 101](https://css-tricks.com/bem-101/) de CSS Tricks.
+  * [Introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) de Harry Roberts.
 
 Se recomienda una variante de BEM con “bloques” en formato [PascalCase](https://es.wikipedia.org/wiki/Pascal_Casing), que funciona particularmente bien cuando se combina con componentes (ej. React). Guiones medios y bajos se utilizan para los modificadores e hijos.
 
@@ -173,7 +175,7 @@ Por más información sobre este tema, lea el siguiente [artículo de CSS Wizard
 
 ### JavaScript hooks
 
-Evitar la vinculación de la misma clase en tu CSS y JavaScript. Combinar los dos a menudo tiene consecuencias negativas, como mínimo, tiempo perdido durante la refactorización cuando un desarrollador debe hacer una referencia cruzada de cada clase que está cambiando, y peor aún, los desarrolladores temen hacer cambios por miedo a romper la funcionalidad.
+Evita la vinculación de la misma clase en tu CSS y JavaScript. Combinar los dos a menudo tiene consecuencias negativas, como mínimo, tiempo perdido durante la refactorización cuando un desarrollador debe hacer una referencia cruzada de cada clase que está cambiando, y peor aún, los desarrolladores temen hacer cambios por miedo a romper la funcionalidad.
 
 Recomendamos crear clases específicas para JavaScript para vincular con CSS, con el prefijo `.js-`:
 
@@ -201,12 +203,14 @@ Utilizar `0` en lugar de `none` para especificar que un estilo no tiene borde.
 }
 ```
 
+**[⬆ volver arriba](#Tabla-de-contenidos)**
+
 ## Sass
 
 ### Sintaxis
 
-* Utilizar la sintaxis `.scss`, nunca la sintaxis `.sass` original
-* Ordenar el CSS regular y las declaraciones `@include` lógicamente (ver a continuación)
+* Utilizar la sintaxis `.scss`, nunca la sintaxis `.sass` original.
+* Ordenar el CSS regular y las declaraciones `@include` lógicamente (ver a continuación).
 
 ### Orden de las declaraciones de propiedades
 
@@ -257,7 +261,7 @@ Preferentemente utilizar nombres de variable con guiones medios (ej. `$mi-variab
 
 ### Mixins
 
-Se deben utilizar Mixins para no repetir código ([principio DRY](https://es.wikipedia.org/wiki/No_te_repitas)), agregar claridad o abstraer de complejidad de la misma manera que las funciones. Los Mixins que no aceptan argumentos pueden ser útiles para ello, pero notar que si no está comprimiendo su carga (ej. gzip), esto puede contribuir a la duplicación innecesaria de código en los estilos resultantes.
+Se deben utilizar Mixins para no repetir código ([principio DRY](https://es.wikipedia.org/wiki/No_te_repitas)), agregar claridad o abstraer de complejidad de la misma manera que las funciones. Los Mixins que no aceptan argumentos pueden ser útiles para ello, pero nota que si no está comprimiendo su carga (ej. gzip), esto puede contribuir a la duplicación innecesaria de código en los estilos resultantes.
 
 ### Extend
 
@@ -287,16 +291,26 @@ Cuando los selectores se vuelven muy largos, probablemente se está escribiendo 
 
 Nuevamente: **¡nunca anidar selectores ID!**
 
-Si tiene que usar un selector ID en primer lugar (debería intentar no hacerlo), nunca deberían anidarse. Si se encuentra haciendo esto, neceista revisar su marcado HTML, o averiguar por qué necesita tanta especificidad. Si está escribiendo HTML y CSS bien formado, **nunca** debería hacer esto.
+Si tiene que usar un selector ID en primer lugar (debería intentar no hacerlo), nunca deberían anidarse. Si se encuentra haciendo esto, necesita revisar su marcado HTML, o averiguar por qué necesita tanta especificidad. Si está escribiendo HTML y CSS bien formado, **nunca** debería hacer esto.
+
+**[⬆ volver arriba](#Tabla-de-contenidos)**
 
 ## Traducción
 
   Esta guía de estilo está disponible también en otros lenguajes:
 
+  - ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Bahasa Indonesia**: [mazipan/css-style-guide](https://github.com/mazipan/css-style-guide)
   - ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Chinese (Traditional)**: [ArvinH/css-style-guide](https://github.com/ArvinH/css-style-guide)
   - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: [Zhangjd/css-style-guide](https://github.com/Zhangjd/css-style-guide)
+  - ![fr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/France.png) **French**: [mat-u/css-style-guide](https://github.com/mat-u/css-style-guide)
   - ![ja](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **Japanese**: [nao215/css-style-guide](https://github.com/nao215/css-style-guide)
   - ![ko](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png) **Korean**: [CodeMakeBros/css-style-guide](https://github.com/CodeMakeBros/css-style-guide)
-  - ![PT-BR](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Portuguese**: [felipevolpatto/css-style-guide](https://github.com/felipevolpatto/css-style-guide)  
-  - ![ru](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png) **Russian**: [Nekorsis/css-style-guide](https://github.com/Nekorsis/css-style-guide)
+  - ![PT-BR](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Portuguese (Brazil)**: [felipevolpatto/css-style-guide](https://github.com/felipevolpatto/css-style-guide)
+  - ![pt-PT](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Portugal.png) **Portuguese (Portugal)**: [SandroMiguel/airbnb-css-style-guide](https://github.com/SandroMiguel/airbnb-css-style-guide)
+  - ![ru](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png) **Russian**: [rtplv/airbnb-css-ru](https://github.com/rtplv/airbnb-css-ru)
   - ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png) **Spanish**: [ismamz/guia-de-estilo-css](https://github.com/ismamz/guia-de-estilo-css)
+  - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
+  - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
+  - ![de](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Germany.png) **German**: [tderflinger/css-styleguide](https://github.com/tderflinger/css-styleguide)
+
+**[⬆ volver arriba](#Tabla-de-contenidos)**
